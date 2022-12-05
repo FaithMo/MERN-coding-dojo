@@ -13,9 +13,11 @@ router.post("/", async (req, res) => {
     return res.status(400).send("Already exists, try again!");
   } else {
     user = new User({
-      name: req.body.name,
+      firstName: req.body.firstName,
+      lastName: req.body.lastName,
       email: req.body.email,
       password: req.body.password,
+      confirmPassword: req.body.confirmPassword,
     });
     await user.save();
     res.send(user);
