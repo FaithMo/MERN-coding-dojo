@@ -1,12 +1,11 @@
 import React from "react";
+import "../Style/Style.css";
 
 function Header() {
   return (
-    <nav class="bg-dark navbar-dark navbar">
-      <div className="row col-12 d-flex justify-content-center text-white">
-        <h3>Welcome to Pirate Crew</h3>
-      </div>
-    </nav>
+    <div className="header">
+      <h3>Welcome to Pirate Crew</h3>
+    </div>
   );
 }
 export default Header;
