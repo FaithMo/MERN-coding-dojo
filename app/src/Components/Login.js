@@ -21,13 +21,13 @@ function Login() {
       password,
     };
     console.log(user);
-    try {
-      axios
-        .get("http://localhost:4000", user)
-        .then((res) => console.log(res.data));
-    } catch (err) {
-      console.log(err.stack);
-    }
+    // try {
+    //   axios
+    //     .get("http://localhost:4000", user)
+    //     .then((res) => console.log(res.data));
+    // } catch (err) {
+    //   console.log(err.stack);
+    // }
   };
   return (
     <div className="form">

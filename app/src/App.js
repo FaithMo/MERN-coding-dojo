@@ -9,20 +9,20 @@ import Dashboard from "./Components/Dashboard";
 
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <div className="body">
-        <div className="rowC">
-          <User />
-          <Login />
+    <BrowserRouter>
+      <Routes>
+        <Route path="/pirates" element={Dashboard} />
+      </Routes>
+      <div className="App">
+        <Header />
+        <div className="body">
+          <div className="rowC">
+            <User />
+            <Login />
+          </div>
         </div>
-        {/* <BrowserRouter>
-          <Routes>
-            <Route path="/pirate" exact component={Dashboard} />
-          </Routes>
-        </BrowserRouter> */}
       </div>
-    </div>
+    </BrowserRouter>
   );
 }
 
