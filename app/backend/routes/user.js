@@ -10,7 +10,7 @@ router.post("/", async (req, res) => {
 
   let user = await User.findOne({ email: req.body.email });
   if (user) {
-    return res.status(400).send("Already exists, try again!");
+    return res.status(400).send("Pirate already exists, try again!");
   } else {
     user = new User({
       firstName: req.body.firstName,
@@ -38,7 +38,6 @@ router.get("/pirates", async (req, res) => {
       email: req.body.email,
       password: req.body.password,
     });
-    // await user.save();
     res.send(user);
   }
 });

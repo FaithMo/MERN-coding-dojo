@@ -4,10 +4,6 @@ import "../Style/Style.css";
 import axios from "axios";
 
 const show = () => {
-  // const user = {
-  //   email,
-  //   password,
-  // };
   console.log();
   try {
     axios.get("http://localhost:4000").then((res) => console.log(res.data));
